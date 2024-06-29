@@ -1,0 +1,44 @@
+{
+  "version": 3,
+  "endpoints": [
+    {
+      "endpoint": "/api/users",
+      "method": "GET",
+      "backend": [
+        {
+          "url_pattern": "/users",
+          "host": [
+            "http://user-service:8000"
+          ]
+        }
+      ]
+    },
+    {
+      "endpoint": "/api/products",
+      "method": "GET",
+      "backend": [
+        {
+          "url_pattern": "/products",
+          "host": [
+            "http://product-service:8000"
+          ]
+        }
+      ]
+    },
+    {
+      "endpoint": "/api/sites",
+      "method": "GET",
+      "backend": [
+        {
+          "url_pattern": "/posts",
+          "host": [
+            "https://jsonplaceholder.typicode.com"
+          ],
+          "encoding": "json",
+          "is_collection": true,
+          "disable_host_sanitize": true
+        }
+      ]
+    }
+  ]
+}

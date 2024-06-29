@@ -1,0 +1,35 @@
+# Fichiers de configuration spécifiques à l'environnement
+config/*.json
+config/*.toml
+
+# Ignorer les fichiers temporaires et les fichiers de compilation
+*.tmp
+*.log
+*.out
+*.pid
+
+# Répertoires contenant les dépendances
+/vendor/
+/node_modules/
+
+# Dossiers de cache et fichiers temporaires de développement
+/.idea/
+/.vscode/
+*.swp
+*~
+.DS_Store
+
+# Binaires locaux
+/bin/
+/obj/
+
+# Fichiers de secrets, qui ne devraient jamais être commités
+*.cert
+*.key
+
+# Fichiers de cache spécifiques à KrakenD
+krakendesigner/
+krakendesigner.json
+
+# Fichiers de sauvegarde automatique des éditeurs
+*_bak
